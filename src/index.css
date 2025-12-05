@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Plieggo Brand Colors */
+    --background: 38 33% 93%;  /* #F2EFE4 Crema Mantequilla */
+    --foreground: 214 40% 18%;  /* #1B2A41 Azul Medianoche */
+
+    --card: 38 33% 93%;
+    --card-foreground: 214 40% 18%;
+
+    --popover: 38 33% 93%;
+    --popover-foreground: 214 40% 18%;
+
+    --primary: 13 44% 51%;  /* #C16648 Terracota Ladrillo */
+    --primary-foreground: 38 33% 93%;
+
+    --secondary: 343 39% 26%;  /* #5D2A38 Vino Burdeos */
+    --secondary-foreground: 38 33% 93%;
+
+    --muted: 38 33% 88%;
+    --muted-foreground: 214 25% 35%;
+
+    --accent: 13 44% 51%;  /* Terracota */
+    --accent-foreground: 38 33% 93%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 38 33% 93%;
+
+    --border: 38 20% 85%;
+    --input: 38 20% 85%;
+    --ring: 13 44% 51%;
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 38 33% 93%;
+    --sidebar-foreground: 214 40% 18%;
+    --sidebar-primary: 13 44% 51%;
+    --sidebar-primary-foreground: 38 33% 93%;
+    --sidebar-accent: 38 33% 88%;
+    --sidebar-accent-foreground: 214 40% 18%;
+    --sidebar-border: 38 20% 85%;
+    --sidebar-ring: 13 44% 51%;
+  }
+
+  .dark {
+    --background: 214 40% 18%;
+    --foreground: 38 33% 93%;
+
+    --card: 214 40% 18%;
+    --card-foreground: 38 33% 93%;
+
+    --popover: 214 40% 18%;
+    --popover-foreground: 38 33% 93%;
+
+    --primary: 13 44% 51%;
+    --primary-foreground: 38 33% 93%;
+
+    --secondary: 343 39% 26%;
+    --secondary-foreground: 38 33% 93%;
+
+    --muted: 214 40% 25%;
+    --muted-foreground: 38 20% 70%;
+
+    --accent: 13 44% 51%;
+    --accent-foreground: 38 33% 93%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 38 33% 93%;
+
+    --border: 214 40% 25%;
+    --input: 214 40% 25%;
+    --ring: 13 44% 51%;
+    
+    --sidebar-background: 214 40% 18%;
+    --sidebar-foreground: 38 33% 93%;
+    --sidebar-primary: 13 44% 51%;
+    --sidebar-primary-foreground: 38 33% 93%;
+    --sidebar-accent: 214 40% 25%;
+    --sidebar-accent-foreground: 38 33% 93%;
+    --sidebar-border: 214 40% 25%;
+    --sidebar-ring: 13 44% 51%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
